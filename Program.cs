@@ -46,13 +46,13 @@ void Sort(int [,] SortArray)
     {
         for (int j = 0; j < SortArray.GetLength(1); j++)
         {
-            for (int k = SortArray.GetLength(1) - 1; k > j; k--)
+            for (int m = SortArray.GetLength(1) - 1; m > j; m--)
             {
-                if (SortArray[i,k] > SortArray[i, k-1])
+                if (SortArray[i,m] > SortArray[i, m-1])
                 {
-                    int temp = SortArray[i,k];
-                    SortArray[i,k] = SortArray[i, k-1];
-                    SortArray[i, k-1] = temp;
+                    int temp = SortArray[i,m];
+                    SortArray[i,m] = SortArray[i, m-1];
+                    SortArray[i, m-1] = temp;
                 }
             }
         }
